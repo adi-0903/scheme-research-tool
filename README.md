@@ -56,11 +56,17 @@ streamlit run main.py
 
 
 haqdarshak-scheme-research/
+
 │
+
 ├── main.py               # Full app in one file
+
 ├── faiss_store_openai.pkl (auto-generated)
+
 ├── README.md             # This file
+
 ├── requirements.txt      # Python dependencies
+
 └── venv/                 # Your virtual environment (excluded from Git)
 
 
