@@ -31,9 +31,8 @@ This is a **Streamlit web app** designed to automate scheme research for Haqdars
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/haqdarshak-scheme-research.git
+git clone https://github.com/adi-0903/scheme-research-tool.git
 cd scheme-research-tool
-
 
 2. Set Up Virtual Environment
 
@@ -51,7 +50,7 @@ pip install -r requirements.txt
 
 streamlit run main.py
 
-
+```
 
 📂 File Structure
 
@@ -73,3 +72,11 @@ Click Process URLs to build the index.
 Type your question in natural language.
 
 Get relevant answers + source links!
+
+
+🛠️ Notes
+Internet is required for downloading models the first time.
+
+If models are too slow, try switching to smaller ones (e.g., google/flan-t5-small).
+
+Index is saved as faiss_store_openai.pkl for reuse.
