@@ -52,7 +52,8 @@ streamlit run main.py
 
 ```
 
-📂 File Structure
+
+# 📂 File Structure
 
 
 haqdarshak-scheme-research/
@@ -71,7 +72,8 @@ haqdarshak-scheme-research/
 
 
 
-✍️ Usage
+
+# ✍️ Usage
 
 
 Paste one or more scheme article URLs (can be PDFs or web pages).
