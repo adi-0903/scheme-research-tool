@@ -80,9 +80,13 @@ Type your question in natural language.
 Get relevant answers + source links!
 
 
-🛠️ Notes
+# 🛠️ Notes
+
+
 Internet is required for downloading models the first time.
 
+
 If models are too slow, try switching to smaller ones (e.g., google/flan-t5-small).
+
 
 Index is saved as faiss_store_openai.pkl for reuse.
