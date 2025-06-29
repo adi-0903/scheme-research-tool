@@ -70,12 +70,18 @@ haqdarshak-scheme-research/
 └── venv/                 # Your virtual environment (excluded from Git)
 
 
+
 ✍️ Usage
+
+
 Paste one or more scheme article URLs (can be PDFs or web pages).
+
 
 Click Process URLs to build the index.
 
+
 Type your question in natural language.
+
 
 Get relevant answers + source links!
 
