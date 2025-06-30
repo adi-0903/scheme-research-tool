@@ -12,7 +12,7 @@ import requests
 import fitz  # PyMuPDF
 
 st.set_page_config(page_title="Scheme Research Tool", layout="wide")
-st.title(" Haqdarshak Scheme Research Tool (Free Version)")
+st.title(" Scheme Research Tool")
 
 # --------- Helper Functions ---------
 def load_url_content(url):
@@ -38,8 +38,8 @@ def load_url_content(url):
 
 # --------- Sidebar Input ---------
 with st.sidebar:
-    st.header("🔗 Input Scheme Article URLs")
-    url_input = st.text_area("Enter one or more URLs (each in a new line):")
+    st.header(" Input Scheme Article URLs")
+    url_input = st.text_area("Enter URLs (each in a new line):")
     process_button = st.button(" Process URLs")
 
 # --------- Process URLs ---------
@@ -60,15 +60,15 @@ if process_button:
                 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
                 vectorstore = FAISS.from_documents(chunks, embeddings)
 
-                with open("faiss_store_openai.pkl", "wb") as f:
+                with open("faiss_index.pkl", "wb") as f:
                     pickle.dump(vectorstore, f)
 
-                st.success("✅ URLs processed and FAISS index saved!")
+                st.success(" URLs processed and FAISS index saved!")
             except Exception as e:
                 st.error(f" Error: {str(e)}")
 
 # --------- Ask Questions ---------
-st.header("💬 Ask a Question About the Scheme")
+st.header(" Ask a Question About the Scheme")
 question = st.text_input("Type your question here:")
 ask_button = st.button(" Get Answer")
 
