@@ -1,100 +1,60 @@
-# 🧠 Haqdarshak Scheme Research Tool (Local, OpenAI-Free)
+SCHEME-RESEARCH-TOOL
+Empowering Insight Through Intelligent Content Discovery
 
-This is a **Streamlit web app** designed to automate scheme research for Haqdarshak. It allows users to input government scheme URLs (including PDFs), extract and summarize content, and **ask questions** using a local language model — **no OpenAI API key required**.
+last-commit repo-top-language repo-language-count
+Built with the tools and technologies:
 
----
+Markdown Streamlit tqdm LangChain Python OpenAI
 
-## ✅ Features
+Table of Contents
+Overview
+Getting Started
+Prerequisites
+Installation
+Usage
+Testing
+Overview
+scheme-research-tool is an open-source developer platform that simplifies scheme-related research by enabling efficient ingestion, processing, and indexing of URLs and PDFs into a vector database. It empowers users to perform fast, relevant content retrieval and generate accurate answers with source references, all within a self-contained environment.
 
-- 🔗 Load articles from URLs (web pages or PDFs)
-- 📄 Extract and chunk content
-- 🧠 Create embeddings using HuggingFace
-- ⚡ Store and search with FAISS for fast Q&A
-- 💬 Ask questions and get answers with source references
-- 🚫 No OpenAI — runs entirely on free or local models
+Why scheme-research-tool?
 
----
+This project streamlines complex document workflows and leverages local AI models for intelligent querying. The core features include:
 
-## 🧰 Technologies Used
+🧩 🟣 Embedding & Indexing: Converts documents into vector representations for quick similarity search.
+🧠 🟢 Local Language Models: Supports querying with local models, eliminating reliance on external APIs.
+📄 🔵 Document Processing: Loads, extracts, and summarizes content from URLs and PDFs.
+🎯 🟠 Interactive Interface: Provides an intuitive Streamlit app for seamless research and exploration.
+🚀 ⚙️ Self-Contained: Easy setup with minimal dependencies, ideal for scalable AI-driven knowledge bases.
+Getting Started
+Prerequisites
+This project requires the following dependencies:
 
-- `Streamlit` for the web interface
-- `LangChain` for document and chain management
-- `HuggingFace Transformers` for free local language models
-- `FAISS` for vector similarity search
-- `PyMuPDF (fitz)` for PDF parsing
-- `venv` for isolated Python environments
+Programming Language: Python
+Package Manager: Pip
+Installation
+Build scheme-research-tool from the source and install dependencies:
 
----
+Clone the repository:
 
-## 🚀 Getting Started
+❯ git clone https://github.com/adi-0903/scheme-research-tool
+Navigate to the project directory:
 
-### 1. Clone the Repository
+❯ cd scheme-research-tool
+Install the dependencies:
 
-```bash
-git clone https://github.com/adi-0903/scheme-research-tool.git
-cd scheme-research-tool
+Using pip:
 
-2. Set Up Virtual Environment
+❯ pip install -r requirements.txt
+Usage
+Run the project with:
 
-python -m venv venv
-source venv/bin/activate
+Using pip:
 
+python {entrypoint}
+Testing
+Scheme-research-tool uses the {test_framework} test framework. Run the test suite with:
 
-3. Install Dependencies
+Using pip:
 
-pip install -r requirements.txt
-
-
-4. Run the App
-
-
-streamlit run main.py
-
-```
-
-
-# 📂 File Structure
-
-
-haqdarshak-scheme-research/
-
-│
-
-├── main.py               # Full app in one file
-
-├── faiss_store_openai.pkl (auto-generated)
-
-├── README.md             # This file
-
-├── requirements.txt      # Python dependencies
-
-└── venv/                 # Your virtual environment (excluded from Git)
-
-
-
-
-# ✍️ Usage
-
-
-Paste one or more scheme article URLs (can be PDFs or web pages).
-
-
-Click Process URLs to build the index.
-
-
-Type your question in natural language.
-
-
-Get relevant answers + source links!
-
-
-# 🛠️ Notes
-
-
-Internet is required for downloading models the first time.
-
-
-If models are too slow, try switching to smaller ones (e.g., google/flan-t5-small).
-
-
-Index is saved as faiss_store_openai.pkl for reuse.
+pytest
+⬆ Return
